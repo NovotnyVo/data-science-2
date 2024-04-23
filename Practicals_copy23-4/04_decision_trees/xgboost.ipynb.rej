@@ -1,0 +1,60 @@
+diff a/Practicals/04_decision_trees/xgboost.ipynb b/Practicals/04_decision_trees/xgboost.ipynb	(rejected hunks)
+@@ -496,8 +496,7 @@
+    },
+    "source": [
+     "# XGBoost model\n",
+-    "- XGBoost model is provided in package `xgboost`\n",
+-    "- https://xgboost.readthedocs.io/en/stable/"
++    "- XGBoost model is provided in package `xgboost`"
+    ]
+   },
+   {
+@@ -723,7 +722,7 @@
+     "\n",
+     "X = data[cols_pred].values\n",
+     "y = data[col_target].values\n",
+-    "data['cv_score'] = -1.0\n",
++    "data['cv_score'] = -1\n",
+     "cv_res = []\n",
+     "for train_index, test_index in skf.split(X, y):\n",
+     "    X_train, X_test = X[train_index], X[test_index]\n",
+@@ -1308,7 +1307,9 @@
+   {
+    "cell_type": "code",
+    "execution_count": null,
+-   "metadata": {},
++   "metadata": {
++    "scrolled": true
++   },
+    "outputs": [],
+    "source": [
+     "for i in r.importances_mean.argsort()[::-1]:\n",
+@@ -1390,8 +1391,7 @@
+     "ExecuteTime": {
+      "end_time": "2021-12-04T18:51:12.904940Z",
+      "start_time": "2021-12-04T18:50:48.400833Z"
+-    },
+-    "scrolled": true
++    }
+    },
+    "outputs": [],
+    "source": [
+@@ -1459,7 +1459,8 @@
+     "ExecuteTime": {
+      "end_time": "2021-12-04T18:51:18.107528Z",
+      "start_time": "2021-12-04T18:51:18.091526Z"
+-    }
++    },
++    "scrolled": true
+    },
+    "outputs": [],
+    "source": [
+@@ -1867,7 +1868,7 @@
+    "name": "python",
+    "nbconvert_exporter": "python",
+    "pygments_lexer": "ipython3",
+-   "version": "3.10.11"
++   "version": "3.10.9"
+   },
+   "toc": {
+    "base_numbering": 1,
